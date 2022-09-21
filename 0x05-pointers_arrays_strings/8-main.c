@@ -13,6 +13,7 @@ int main(void)
 	array[1] = 402;
 	array[2] = -198;
 	array[4] = -1024;
-	print_array(array, 5);
+	print_array(array, 0);
+	print_array(array, -1);
 	return (0);
 }
