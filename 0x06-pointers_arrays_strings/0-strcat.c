@@ -1,26 +1,25 @@
 #include "main.h"
+#include <string.h>
 
 /**
- * _strncat - concatenates two strings
- * @dest: destination char
- * @src: source char
- * @n: number of bytes from src
- * Return: new string
+ * _strcat - appends src to the dest string
+ * @dest: string to appen by src
+ * @src: string to append to dest
+ * 
+ * Return: address of dest
  */
 
 char *_strcat(char *dest, char *src)
 {
-	int i;
-	int n = 0;
+	int i, j;
 
-	while (dest[n] != '\0')
+	i = j = 0;
+	while (*(dest + i))
+		i++;
+	while ((*(dest + i) = *(src + j)))
 	{
-		n++;
+		i++;
+		j++;
 	}
-
-	for (i = 0; i < n && src[i] != '\0'; i++)
-		dest[n + i] = src[i];
-	dest[n + i] = '\0';
-
 	return (dest);
 }
